@@ -9,13 +9,15 @@ using UnityEngine.AI;
 public class GameManager : MonoBehaviour {
 
     public GameObject ExplosionPrefab;
-    public int Stage = 1;
+    public int Stage = 0;
 
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
     public GameObject JammerPrefab;
 
     private bool loading = false;
+
+    private int screenCount = 0;
 
     private void Start()
     {
@@ -24,10 +26,11 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if(Input.GetKeyUp(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.M) && Application.isEditor)
         {
-            ResetScene(0);
-        }*/
+            screenCount++;
+            Application.CaptureScreenshot(string.Format("Screenshot{0}.png", screenCount));
+        }
         GameObject.Find("StageText").GetComponent<Text>().text = string.Format("Stage: {0}", Stage);
 	}
 
