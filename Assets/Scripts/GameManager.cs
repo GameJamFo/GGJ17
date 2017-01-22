@@ -24,10 +24,11 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyUp(KeyCode.R))
+		/*if(Input.GetKeyUp(KeyCode.R))
         {
             ResetScene(0);
-        }
+        }*/
+        GameObject.Find("StageText").GetComponent<Text>().text = string.Format("Stage: {0}", Stage);
 	}
 
     void ResetScene(int Stage)

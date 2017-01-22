@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour, AudioProcessor.AudioCallbacks
             GameManager mgr = GameObject.Find("GameManager").GetComponent<GameManager>();
             GameObject explosion = Instantiate(mgr.ExplosionPrefab, collision.transform.position, collision.transform.rotation);
             Destroy(collision.transform.gameObject);
-            Destroy(explosion, 2);
+            Destroy(explosion, 5);
             StartCoroutine(GameObject.Find("GameManager").GetComponent<GameManager>().FadeOut("You are on a roll...!", true));
         }
     }

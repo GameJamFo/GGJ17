@@ -10,6 +10,7 @@ public class EpicLight : MonoBehaviour, AudioProcessor.AudioCallbacks
     {
         AudioProcessor processor = GameObject.Find("GameManager").GetComponent<AudioProcessor>();
         processor.addAudioCallback(this);
+        GetComponent<Light>().color = Random.ColorHSV();
     }
 
 

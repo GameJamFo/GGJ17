@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10eb084b2f0332e45948c29eea4bc60f
+guid: dfee26daedf96cf4c922a0e0ee475447
 timeCreated: 1485039540
 licenseType: Free
 TextureImporter:
@@ -17,7 +17,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 1
     externalNormalMap: 0
-    heightScale: 0.095
+    heightScale: 0.101
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -42,7 +42,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 1
   textureShape: 1

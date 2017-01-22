@@ -28,7 +28,7 @@ public class GunManager : MonoBehaviour {
         if (Ammo < AmmoMax) {
             Image AmmoMeter = GameObject.Find("AmmoBar").GetComponent<Image>();
             AmmoMeter.enabled = true;
-            AmmoMeter.fillAmount += Player.GetComponent<CharacterController>().velocity.sqrMagnitude / 2000;
+            AmmoMeter.fillAmount += Player.GetComponent<CharacterController>().velocity.normalized.sqrMagnitude / 175;
             if (AmmoMeter.fillAmount >= 1) 
             {
                 AmmoMeter.fillAmount = 0;
