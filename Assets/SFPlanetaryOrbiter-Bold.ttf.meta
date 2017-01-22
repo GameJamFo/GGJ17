@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c8a51c6a44925b84a8710ab5765b7845
+timeCreated: 1484959208
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SF Planetary Orbiter
+  fontNames:
+  - SF Planetary Orbiter
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
