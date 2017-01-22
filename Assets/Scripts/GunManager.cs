@@ -10,9 +10,7 @@ public class GunManager : MonoBehaviour {
     public int Ammo;
     public GameObject Bullet;
     public Transform Endpoint;
-    public Text Ammo_Text;
     public GameObject Player;
-    public Image AmmoMeter;
     public VignetteAndChromaticAberration timeRift;
 
 	// Use this for initialization
@@ -26,8 +24,9 @@ public class GunManager : MonoBehaviour {
         {
             Fire();
         }
-        Ammo_Text.text = string.Format("{0} Ammo", Ammo);
+        GameObject.Find("AmmoText").GetComponent<Text>().text = string.Format("{0} Ammo", Ammo);
         if (Ammo < AmmoMax) {
+            Image AmmoMeter = GameObject.Find("AmmoBar").GetComponent<Image>();
             AmmoMeter.enabled = true;
             AmmoMeter.fillAmount += Player.GetComponent<CharacterController>().velocity.sqrMagnitude / 2000;
             if (AmmoMeter.fillAmount >= 1) 
@@ -44,7 +43,7 @@ public class GunManager : MonoBehaviour {
     {
         if(timeRift.chromaticAberration > 0)
         {
-            timeRift.chromaticAberration -= Time.deltaTime * 20;
+            timeRift.chromaticAberration -= Time.deltaTime * 50;
         }
     }
 

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour {
 
-    public Text HealthText;
     private int health = 100;
     public int Health {
         get
@@ -17,13 +16,16 @@ public class PlayerManager : MonoBehaviour {
             health = value;
             if (health > 100)
                 health = 100;
-            if (health < 0)
+            if (health <= 0)
+            {
                 health = 0;
+                StartCoroutine(GameObject.Find("GameManager").GetComponent<GameManager>().FadeOut("Shit! sorry.", false));
+            }
         }
     }
 
 	void Update () {
-        HealthText.text = string.Format("Health: {0}%", Health);
+        GameObject.Find("HealthText").GetComponent<Text>().text = string.Format("Health: {0}%", Health);
 	}
 	
 	public void Hit() {
