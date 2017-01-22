@@ -1,10 +1,17 @@
 fileFormatVersion: 2
-guid: 2b9910641140f8e429a194bcdecb5f3e
-timeCreated: 1485065499
+guid: e7e6ea1cfa8113e439c949d63d1acd09
+timeCreated: 1485068855
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder
+    7400000: Default Take
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
