@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmptyCollider : MonoBehaviour {
-
-    public GameObject door;
+public class OpenDoor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
